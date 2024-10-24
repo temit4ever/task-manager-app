@@ -7,10 +7,10 @@ Simple Laravel web application for task management: To use the app user has to r
 - Run composer install
 - Copy the `.env.example` to `.env`
 - Run the migration command to set up necessary tables
-- Also, Run `npm install` to bring in the node_modules and any necessary third parties packages.
-- Run the serve artisan command to get the app running
+- Also, Run `npm install` to bring in the node_modules and any necessary third party packages.
 - You can also run the artisan command for test
-- Lastly, get the http address artisan command produce by this command and pop it into the browser
+- Run the serve artisan command to get the app running
+- Lastly, get the http address the artisan command above produce and pop it into the browser
 
 
 
