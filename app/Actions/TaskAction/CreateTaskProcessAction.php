@@ -11,7 +11,7 @@ class CreateTaskProcessAction
     public function handle(): object
     {
         try {
-            return Project::all();
+            return Project::orderBy('name')->get();
         } catch (\Exception $e) {
             return redirect()->back()->with('error', 'Problem retrieving data for form usage to create task');
         }

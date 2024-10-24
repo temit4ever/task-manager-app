@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold mb-4">Create Task</h1>
+        <h1 class="text-3xl font-bold mb-4">Create Project</h1>
 
         <div class="card card-body bg-light p-4">
             <form id="projectForm" action="{{ route('store.project') }}" method="POST">

@@ -18,11 +18,11 @@
             </div>
             <div class="clearfix"></div>
             <div class="float-end mb-2">
-
+                <!-- Only show the create project button on page load so that we can create project first before creating task-->
                 @if(count($project) > 0)
                 <a href="{{ route('create.task') }}" class="btn btn-sm btn-info ">Create Task</a>
                 @endif
-                <a href="{{ route('create.project') }}" class="btn btn-sm btn-secondary">Create project</a>
+                <a href="{{ route('create.project') }}" class="btn btn-sm btn-secondary">Create Project</a>
             </div>
             <div class="clearfix"></div>
         </div>
