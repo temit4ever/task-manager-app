@@ -17,7 +17,7 @@ class EditTaskProcessAction
         try {
             return [
                 'task' => Task::with('project')->findOrFail($id),
-                'project' => Project::all()
+                'project' => Project::orderBy('name')->get()
             ];
 
         } catch (\Exception $e) {

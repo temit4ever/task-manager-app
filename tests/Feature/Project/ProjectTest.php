@@ -9,6 +9,6 @@ test('display project form fields', function () {
     $user = User::factory()->create();
     $response = $this->actingAs($user)->getJson(route('create.project'));
     $response
-        ->assertSee('Create Task')
+        ->assertSee('Create Project')
         ->assertStatus(200);
 });

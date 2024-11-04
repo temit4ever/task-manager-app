@@ -12,7 +12,7 @@ class ShowProjectProcessAction
     public function handle()
     {
         try {
-            return Project::all();
+            return Project::orderBy('name')->get();
         }catch (\Exception $e) {
             return redirect()->back()->with('error', 'Problem retrieving projects');
         }
